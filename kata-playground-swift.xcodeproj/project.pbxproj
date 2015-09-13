@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9D31AA911BA58BB300130009 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31AA901BA58BB300130009 /* main.swift */; };
+		9D31AA9E1BA58C4300130009 /* primeFactorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31AA9D1BA58C4300130009 /* primeFactorsTests.swift */; };
+		9D31AAA51BA58D5300130009 /* primeFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31AAA41BA58D5300130009 /* primeFactors.swift */; settings = {ASSET_TAGS = (); }; };
+		9D31AAAB1BA5992E00130009 /* primeFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31AAA41BA58D5300130009 /* primeFactors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +28,21 @@
 /* Begin PBXFileReference section */
 		9D31AA8D1BA58BB300130009 /* kata-playground-swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "kata-playground-swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D31AA901BA58BB300130009 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9D31AA9B1BA58C4300130009 /* kata-playground-swift-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kata-playground-swift-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D31AA9D1BA58C4300130009 /* primeFactorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = primeFactorsTests.swift; sourceTree = "<group>"; };
+		9D31AA9F1BA58C4300130009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D31AAA41BA58D5300130009 /* primeFactors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = primeFactors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9D31AA8A1BA58BB300130009 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D31AA981BA58C4300130009 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				9D31AA8F1BA58BB300130009 /* kata-playground-swift */,
+				9D31AA9C1BA58C4300130009 /* kata-playground-swift-tests */,
 				9D31AA8E1BA58BB300130009 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				9D31AA8D1BA58BB300130009 /* kata-playground-swift */,
+				9D31AA9B1BA58C4300130009 /* kata-playground-swift-tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +74,18 @@
 			isa = PBXGroup;
 			children = (
 				9D31AA901BA58BB300130009 /* main.swift */,
+				9D31AAA41BA58D5300130009 /* primeFactors.swift */,
 			);
 			path = "kata-playground-swift";
+			sourceTree = "<group>";
+		};
+		9D31AA9C1BA58C4300130009 /* kata-playground-swift-tests */ = {
+			isa = PBXGroup;
+			children = (
+				9D31AA9D1BA58C4300130009 /* primeFactorsTests.swift */,
+				9D31AA9F1BA58C4300130009 /* Info.plist */,
+			);
+			path = "kata-playground-swift-tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +108,23 @@
 			productReference = 9D31AA8D1BA58BB300130009 /* kata-playground-swift */;
 			productType = "com.apple.product-type.tool";
 		};
+		9D31AA9A1BA58C4300130009 /* kata-playground-swift-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D31AAA01BA58C4300130009 /* Build configuration list for PBXNativeTarget "kata-playground-swift-tests" */;
+			buildPhases = (
+				9D31AA971BA58C4300130009 /* Sources */,
+				9D31AA981BA58C4300130009 /* Frameworks */,
+				9D31AA991BA58C4300130009 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kata-playground-swift-tests";
+			productName = "kata-playground-swift-tests";
+			productReference = 9D31AA9B1BA58C4300130009 /* kata-playground-swift-tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -89,15 +132,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = beyondworlds.net;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					9D31AA8C1BA58BB300130009 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					9D31AA9A1BA58C4300130009 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
 			};
 			buildConfigurationList = 9D31AA881BA58BB300130009 /* Build configuration list for PBXProject "kata-playground-swift" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -109,16 +155,37 @@
 			projectRoot = "";
 			targets = (
 				9D31AA8C1BA58BB300130009 /* kata-playground-swift */,
+				9D31AA9A1BA58C4300130009 /* kata-playground-swift-tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D31AA991BA58C4300130009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D31AA891BA58BB300130009 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D31AAA51BA58D5300130009 /* primeFactors.swift in Sources */,
 				9D31AA911BA58BB300130009 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D31AA971BA58C4300130009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D31AAAB1BA5992E00130009 /* primeFactors.swift in Sources */,
+				9D31AA9E1BA58C4300130009 /* primeFactorsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +284,28 @@
 			};
 			name = Release;
 		};
+		9D31AAA11BA58C4300130009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "kata-playground-swift-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "beyondworlds.kata-playground-swift-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9D31AAA21BA58C4300130009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "kata-playground-swift-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "beyondworlds.kata-playground-swift-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -236,6 +325,16 @@
 				9D31AA961BA58BB300130009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D31AAA01BA58C4300130009 /* Build configuration list for PBXNativeTarget "kata-playground-swift-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D31AAA11BA58C4300130009 /* Debug */,
+				9D31AAA21BA58C4300130009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

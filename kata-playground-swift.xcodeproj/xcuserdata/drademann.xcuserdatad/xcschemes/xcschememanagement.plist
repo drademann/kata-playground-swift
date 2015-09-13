@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>kata-playground-swift-tests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>kata-playground-swift.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>9D31AA8C1BA58BB300130009</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9D31AA9A1BA58C4300130009</key>
 		<dict>
 			<key>primary</key>
 			<true/>
