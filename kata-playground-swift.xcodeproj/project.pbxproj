@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D31AA911BA58BB300130009 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31AA901BA58BB300130009 /* main.swift */; };
 		9D31AA9E1BA58C4300130009 /* primeFactorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31AA9D1BA58C4300130009 /* primeFactorsTests.swift */; };
 		9D31AAA51BA58D5300130009 /* primeFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31AAA41BA58D5300130009 /* primeFactors.swift */; settings = {ASSET_TAGS = (); }; };
-		9D31AAAB1BA5992E00130009 /* primeFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31AAA41BA58D5300130009 /* primeFactors.swift */; };
+		9D50DA7F1BA5FE8900A4075E /* primeFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31AAA41BA58D5300130009 /* primeFactors.swift */; };
+		9D50DA801BA5FE8900A4075E /* stringCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9BFB41BA5F9120021C3B8 /* stringCalculator.swift */; };
+		9DF9BFB31BA5F7450021C3B8 /* stringCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9BFB21BA5F7450021C3B8 /* stringCalculatorTests.swift */; settings = {ASSET_TAGS = (); }; };
+		9DF9BFB51BA5F9120021C3B8 /* stringCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9BFB41BA5F9120021C3B8 /* stringCalculator.swift */; settings = {ASSET_TAGS = (); }; };
+		9DF9BFBE1BA5FB3E0021C3B8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9BFBD1BA5FB3E0021C3B8 /* main.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,11 +30,14 @@
 
 /* Begin PBXFileReference section */
 		9D31AA8D1BA58BB300130009 /* kata-playground-swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "kata-playground-swift"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D31AA901BA58BB300130009 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9D31AA9B1BA58C4300130009 /* kata-playground-swift-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kata-playground-swift-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D31AA9D1BA58C4300130009 /* primeFactorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = primeFactorsTests.swift; sourceTree = "<group>"; };
 		9D31AA9F1BA58C4300130009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D31AAA41BA58D5300130009 /* primeFactors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = primeFactors.swift; sourceTree = "<group>"; };
+		9D50DA811BA600DA00A4075E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9DF9BFB21BA5F7450021C3B8 /* stringCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stringCalculatorTests.swift; sourceTree = "<group>"; };
+		9DF9BFB41BA5F9120021C3B8 /* stringCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stringCalculator.swift; sourceTree = "<group>"; };
+		9DF9BFBD1BA5FB3E0021C3B8 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,7 @@
 		9D31AA841BA58BB300130009 = {
 			isa = PBXGroup;
 			children = (
+				9D50DA811BA600DA00A4075E /* .gitignore */,
 				9D31AA8F1BA58BB300130009 /* kata-playground-swift */,
 				9D31AA9C1BA58C4300130009 /* kata-playground-swift-tests */,
 				9D31AA8E1BA58BB300130009 /* Products */,
@@ -73,8 +80,9 @@
 		9D31AA8F1BA58BB300130009 /* kata-playground-swift */ = {
 			isa = PBXGroup;
 			children = (
-				9D31AA901BA58BB300130009 /* main.swift */,
+				9DF9BFBD1BA5FB3E0021C3B8 /* main.swift */,
 				9D31AAA41BA58D5300130009 /* primeFactors.swift */,
+				9DF9BFB41BA5F9120021C3B8 /* stringCalculator.swift */,
 			);
 			path = "kata-playground-swift";
 			sourceTree = "<group>";
@@ -83,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				9D31AA9D1BA58C4300130009 /* primeFactorsTests.swift */,
+				9DF9BFB21BA5F7450021C3B8 /* stringCalculatorTests.swift */,
 				9D31AA9F1BA58C4300130009 /* Info.plist */,
 			);
 			path = "kata-playground-swift-tests";
@@ -176,7 +185,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D31AAA51BA58D5300130009 /* primeFactors.swift in Sources */,
-				9D31AA911BA58BB300130009 /* main.swift in Sources */,
+				9DF9BFB51BA5F9120021C3B8 /* stringCalculator.swift in Sources */,
+				9DF9BFBE1BA5FB3E0021C3B8 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,8 +194,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D31AAAB1BA5992E00130009 /* primeFactors.swift in Sources */,
+				9D50DA7F1BA5FE8900A4075E /* primeFactors.swift in Sources */,
+				9D50DA801BA5FE8900A4075E /* stringCalculator.swift in Sources */,
 				9D31AA9E1BA58C4300130009 /* primeFactorsTests.swift in Sources */,
+				9DF9BFB31BA5F7450021C3B8 /* stringCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
