@@ -5,6 +5,19 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES"
+            buildForTesting = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9D31AA9A1BA58C4300130009"
+               BuildableName = "kata-playground-swift-tests.xctest"
+               BlueprintName = "kata-playground-swift-tests"
+               ReferencedContainer = "container:kata-playground-swift.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
