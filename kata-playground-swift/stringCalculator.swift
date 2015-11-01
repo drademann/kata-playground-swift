@@ -9,11 +9,11 @@ struct StringCalculator {
 		return 0;
 	}
 
-	func hasInput() -> Bool { return !input.isEmpty }
+	private func hasInput() -> Bool { return !input.isEmpty }
 
-	func splitted() -> [String] { return input.characters.split(",").map(String.init)	}
+	private func splitted() -> [String] { return input.characters.split(",").map(String.init)	}
 	
-	func asInt(strings: [String]) -> [Int] { return strings.map { Int($0)! }}
+	private func asInt(strings: [String]) -> [Int] { return strings.map { Int($0)! }}
 	
-	func sum(numbers: [Int]) -> Int { return numbers.reduce(0, combine: { $0 + $1 })}
+	private func sum(numbers: [Int]) -> Int { return numbers.reduce(0, combine: { $0 + $1 })}
 }
