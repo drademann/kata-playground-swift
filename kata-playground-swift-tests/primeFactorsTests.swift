@@ -17,4 +17,5 @@ class PrimeFactorTests: XCTestCase {
 		assertPrimes(of: 8, are: [2, 2, 2])
 		assertPrimes(of: 9, are: [3, 3])
 	}
+    
 }

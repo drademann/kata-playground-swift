@@ -15,4 +15,5 @@ class StringCalculatorTests: XCTestCase {
 		//assertStringSum(of: "1\n2", equalsTo: 3)
 		//assertStringSum(of: "//;\n1;2", equalsTo: 3)
 	}
+    
 }
