@@ -4,7 +4,7 @@ import XCTest
 class PrimeFactorTests: XCTestCase {
 	
 	func assertPrimes(of n: Int, are expectedPrimes: [Int]) {
-		XCTAssertEqual(generatePrimeFactors(n), expectedPrimes)
+        XCTAssertEqual(generatePrimeFactors(n: n), expectedPrimes)
 	}
 	
 	func testPrimeFactorGeneration() {

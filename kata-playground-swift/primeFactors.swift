@@ -3,10 +3,13 @@ func generatePrimeFactors(n: Int) -> [Int] {
 	var number = n
 	var primes: [Int] = []
 	
-	for var candidate = 2; number > 1; candidate++ {
-		for ;number % candidate == 0; number /= candidate {
+    var candidate = 2
+    while number > 1 {
+        while number % candidate == 0 {
 			primes.append(candidate)
+            number /= candidate
 		}
+        candidate += 1
 	}
 	
 	return primes

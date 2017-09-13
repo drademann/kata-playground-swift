@@ -3,17 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 47;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9D31AA9E1BA58C4300130009 /* primeFactorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31AA9D1BA58C4300130009 /* primeFactorsTests.swift */; };
-		9D31AAA51BA58D5300130009 /* primeFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31AAA41BA58D5300130009 /* primeFactors.swift */; settings = {ASSET_TAGS = (); }; };
+		9D31AAA51BA58D5300130009 /* primeFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31AAA41BA58D5300130009 /* primeFactors.swift */; };
 		9D50DA7F1BA5FE8900A4075E /* primeFactors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D31AAA41BA58D5300130009 /* primeFactors.swift */; };
 		9D50DA801BA5FE8900A4075E /* stringCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9BFB41BA5F9120021C3B8 /* stringCalculator.swift */; };
-		9DF9BFB31BA5F7450021C3B8 /* stringCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9BFB21BA5F7450021C3B8 /* stringCalculatorTests.swift */; settings = {ASSET_TAGS = (); }; };
-		9DF9BFB51BA5F9120021C3B8 /* stringCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9BFB41BA5F9120021C3B8 /* stringCalculator.swift */; settings = {ASSET_TAGS = (); }; };
-		9DF9BFBE1BA5FB3E0021C3B8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9BFBD1BA5FB3E0021C3B8 /* main.swift */; settings = {ASSET_TAGS = (); }; };
+		9DF9BFB31BA5F7450021C3B8 /* stringCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9BFB21BA5F7450021C3B8 /* stringCalculatorTests.swift */; };
+		9DF9BFB51BA5F9120021C3B8 /* stringCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9BFB41BA5F9120021C3B8 /* stringCalculator.swift */; };
+		9DF9BFBE1BA5FB3E0021C3B8 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF9BFBD1BA5FB3E0021C3B8 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,7 +37,7 @@
 		9D50DA811BA600DA00A4075E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		9DC534AC1BAEF51200E1DFB0 /* kata.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = kata.playground; sourceTree = "<group>"; };
 		9DF9BFB21BA5F7450021C3B8 /* stringCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stringCalculatorTests.swift; sourceTree = "<group>"; };
-		9DF9BFB41BA5F9120021C3B8 /* stringCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stringCalculator.swift; sourceTree = "<group>"; };
+		9DF9BFB41BA5F9120021C3B8 /* stringCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = stringCalculator.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		9DF9BFBD1BA5FB3E0021C3B8 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,7 +142,7 @@
 		9D31AA851BA58BB300130009 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					9D31AA8C1BA58BB300130009 = {
@@ -154,7 +154,7 @@
 				};
 			};
 			buildConfigurationList = 9D31AA881BA58BB300130009 /* Build configuration list for PBXProject "kata-playground-swift" */;
-			compatibilityVersion = "Xcode 6.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -214,13 +214,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -241,11 +249,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -257,13 +266,21 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -278,9 +295,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
