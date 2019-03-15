@@ -18,7 +18,7 @@ struct StringCalculator {
     }
     
     private func ofSplittedInput() -> [String] {
-        return input.characters
+        return input
             .split(separator: ",")
             .map(String.init)
     }
